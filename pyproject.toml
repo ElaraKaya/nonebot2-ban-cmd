@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "nonebot2-ban-cmd"
+version = "0.1.0"
+description = "A NoneBot2 project that uses group ban duration as command triggers."
+authors = ["Elara <elara@elakaya.cn>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nonebot2 = {extras = ["fastapi"], version = "^2.2.0"}
+nonebot-adapter-onebot = "^2.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.nonebot]
+plugins = []
+plugin_dirs = ["src/plugins"]
+builtin_plugins = []
